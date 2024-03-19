@@ -1,0 +1,6 @@
+PUT  http://localhost:3001/api/student/65f748a7952bbb19c3624e5c
+Content-Type: application/json
+
+{
+"comision":"01"
+}

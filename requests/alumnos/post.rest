@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/student
+Content-Type: application/json
+
+{
+"dni":"22862874",
+"ingreso":"1998",
+"apellido":"AAAAAAAA",
+"nombres":"Sinnombre",
+"comision":"01",
+"horarioComision":"Ma 08:00 a 12:00",
+"roles":"student"
+}
