@@ -1,3 +1,4 @@
 node_modules
 alConfig.js
 .env
+.vercel

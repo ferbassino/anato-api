@@ -4,11 +4,12 @@ const app = express();
 const studentRouter = require("./routes/studentRoutes");
 const userRouter = require("./routes/userRoutes");
 const router = express.Router();
+
 const cors = require("cors");
 require("dotenv").config({ path: "./.env" });
 
-router.get("/", (req, res) => {
-  res.send("welcome to backend zone");
+app.get("/", (req, res) => {
+  res.json({ success: true, message: "welcome to backend zone" });
 });
 
 app.use(
@@ -20,7 +21,7 @@ app.use(express.json());
 app.use(studentRouter);
 app.use(userRouter);
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 
 app.listen(3001, () => {
   console.log(`Listening on port ${PORT}`);
